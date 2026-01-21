@@ -4,7 +4,7 @@
 ![img](screenshots/ss1.png)
 ![img](screenshots/ss2.png)
 ![img](screenshots/ss4.png)
-![img](screenshots/ss5.png)
+![img](screenshots/ss5.mov)
 
 ## Run Locally
 
