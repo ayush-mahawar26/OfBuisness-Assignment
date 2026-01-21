@@ -1,0 +1,297 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 50%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0F172A;
+}
+
+.modal-close-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #64748b;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.modal-close-button:hover {
+    background: #f1f5f9;
+}
+
+.contact-form {
+    padding: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #334155;
+}
+
+.form-group input {
+    display: flex;
+    padding: 0.75rem;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #006EFA;
+}
+
+.form-group input.input-error {
+    border-color: red;
+    color: red;
+}
+
+.form-group input.input-error:focus {
+    border-color: red;
+    outline: none;
+}
+
+.form-group select {
+    padding: 0.75rem;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.2s;
+    background: white;
+    cursor: pointer;
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: #006EFA;
+}
+
+.form-select {
+    padding: 0.75rem;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.2s;
+    background: white;
+    cursor: pointer;
+}
+
+.form-select:focus {
+    outline: none;
+    border-color: #006EFA;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.cancel-button {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    background: white;
+    color: #334155;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.cancel-button:hover {
+    background: #f8fafc;
+}
+
+.submit-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background: #006EFA;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.submit-button:hover {
+    background: #0056d6;
+}
+
+.state-dropdown-container {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.state-dropdown-container label {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #334155;
+}
+
+.state-dropdown-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.state-dropdown-input {
+    width: 100%;
+    padding: 0.75rem;
+    padding-right: 2.5rem;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.2s;
+    background: white;
+    color: #334155;
+    box-sizing: border-box;
+}
+
+.state-dropdown-input:focus {
+    outline: none;
+    border-color: #006EFA;
+}
+
+.state-dropdown-input.input-error {
+    border-color: red;
+    color: red;
+}
+
+.state-dropdown-input.input-error:focus {
+    border-color: red;
+    outline: none;
+}
+
+.state-dropdown-input::placeholder {
+    color: #94a3b8;
+}
+
+.state-dropdown-caret {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.state-dropdown-caret:hover {
+    opacity: 0.7;
+}
+
+.state-dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 0.25rem;
+    background: white;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.state-dropdown-item {
+    padding: 0.75rem;
+    font-size: 0.8rem;
+    font-family: 'Inter', sans-serif;
+    color: #334155;
+    cursor: pointer;
+    border-bottom: 1px solid #e2e8f0;
+    transition: background-color 0.2s;
+}
+
+.state-dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.state-dropdown-item:hover {
+    background-color: #f8fafc;
+}
+
+.state-dropdown-no-results {
+    color: #94a3b8;
+    cursor: default;
+}
+
+.state-dropdown-no-results:hover {
+    background-color: white;
+}

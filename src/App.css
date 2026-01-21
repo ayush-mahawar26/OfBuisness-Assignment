@@ -1,0 +1,101 @@
+#root {
+  top: 0;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(to right, #006EFA, #07CDBE);
+  padding: 1rem 2rem;
+  margin: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#contact-manager-title {
+  font-size: 2rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #0F172A;
+}
+
+header img {
+  margin-left: 10rem;
+}
+
+.content-table-and-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border: 1px solid #CBD5E1;
+  padding: 1rem;
+  border-radius: 6px;
+  background: white;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #CBD5E1;
+  border-radius: 10px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  border: none;
+}
+
+.add-contact-button {
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-family: 'Inter', sans-serif;
+  border: none;
+  background: #006EFA;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.add-contact-button:hover {
+  background: #0056d6;
+}
+
+.bulk-delete-button {
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-family: 'Inter', sans-serif;
+  border: none;
+  background: #006EFA;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.bulk-delete-button:hover {
+  background: #0056d6;
+}
+
+
+.search-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
